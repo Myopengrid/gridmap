@@ -1,0 +1,11 @@
+a.map-link { cursor: pointer; text-decoration: none; font-weight: bold; }
+
+input { color: white; background-color: #404040; }*/
+
+a.list-selectable { display: block; margin: 5px 10px; }
+a.list-selectable:hover { cursor: pointer; background-color: #808080; color: #ffffff; }
+a.list-selected { background-color: #2020c0; }
+a.list-selected div { color: #ffffff; }
+a.list-selectable div { margin: 5px; }
+a.list-selected:hover { background-color: #2020c0; color: #ffffff; }
+

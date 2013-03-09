@@ -1,0 +1,55 @@
+{
+    "name": "Grid Map",
+    "slug": "gridmap",
+    "version": "1.0.0",
+    "core_version": "0.0.1",
+    "description": "Opensim Grid Map",
+    "keywords": ["opensim","grid", "map"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jefferson Costella",
+            "email": "jeff@localhost",
+            "role": "Lead Developer"
+        }
+    ],
+    "options": {
+            "handles": "grid_map",
+            "auto": true
+    },
+    "roles" : [
+        {
+            "name":"Access Gridmap",
+            "description":"Permit access to the gridmap module.",
+            "slug":"backend_gridmap_gridmap_get_index",
+            "value":false
+        },
+        {
+            "name":"Change Gridmap Settings",
+            "description":"Permit change settings of the gridmap module.",
+            "slug":"backend_gridmap_gridmap_put_update",
+            "value":false
+        }
+    ],
+    "required":[
+        {
+            "name": "settings",
+            "version": "1.0.0"
+        },
+        {
+            "name": "opensim",
+            "version": "1.0.0"
+        }
+    ],
+    "recommended": [],
+    "menu": [
+        {
+            "main_menu" : "Modules",
+            "title"     : "Grid Map",
+            "url"       : "grid_map",
+            "class"     : "",
+            "li_class"  : "",
+            "children"  : []
+        }
+    ]
+}
