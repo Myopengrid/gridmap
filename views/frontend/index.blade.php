@@ -26,7 +26,7 @@
     
     <div style="margin-bottom:15px;">
         <a class="btn btn-mini btn-primary" id="searchcoords">Search by coordenates</a> 
-        <a class="btn btn-mini btn-primary" id="searchname">Serach by name</a>
+        <a class="btn btn-mini btn-primary" id="searchname">Search by name</a>
     </div>
 
     <div id="map1" style="width: 100%; height: 560px; "></div>
