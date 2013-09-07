@@ -117,7 +117,12 @@ class Gridmap_Frontend_Gridmap_Controller extends Public_Controller {
     {
         $geom = $size.'x'.$size;
 
-        $path = path('public').'bundles/gridmap/img/tmp_maptiles/';
+        $path = path('public').'media/gridmap/img/tmp_maptiles/';
+
+        if( !file_exists($path))
+        {
+            @mkdir($path , 0777, true );
+        }
 
         $asset_url = rtrim(Config::get('settings::core.gridmap_grid_asset_url'), '/');
 

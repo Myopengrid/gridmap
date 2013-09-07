@@ -25,7 +25,7 @@
 <div class="row">
     
     <div style="margin-bottom:15px;">
-        <a class="btn btn-mini btn-primary" id="searchcoords">Search by coordenates</a> 
+        <a class="btn btn-mini btn-primary" id="searchcoords">Search by coordinates</a> 
         <a class="btn btn-mini btn-primary" id="searchname">Search by name</a>
     </div>
 
