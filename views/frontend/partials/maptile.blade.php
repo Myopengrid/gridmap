@@ -5,7 +5,7 @@
 ?>
 @if(isset($region_name))
     <span class="map-tooltip">{{ $region_coordenate }}</span>{{ "\n" }}
-    bundles/gridmap/img/tmp_maptiles/{{ $region_map_texture }}{{ "\n" }}
+    {{ Config::get('gridmap::settings.tile_cache_path') .'/'. $region_map_texture }}{{ "\n" }}
 
     @if($map_tile_size > 64)
     <input class="data" type="hidden" value="no" />
