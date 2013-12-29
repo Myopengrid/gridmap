@@ -13,7 +13,8 @@ Route::put(ADM_URI.'/(:bundle)', function()
 
 
 // Grid Map Controller frontend
-Route::get('grid_map', function()
+$map_slug_handler = Config::get('settings::core.gridmap_map_slug');
+Route::get($map_slug_handler, function()
 {
     return Controller::call('gridmap::frontend.gridmap@index');
 });
